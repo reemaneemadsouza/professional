@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reema Dsouza | Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+
+    <nav class="navbar">
+        <div class="nav-brand">RD.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact" class="btn-primary">Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content observe">
+            <h2 class="subtitle">Finance & Systems Consultant</h2>
+            <h1 class="title">Hello, I'm <span class="highlight">Reema Dsouza</span></h1>
+            <p>Bridging corporate finance and advanced technical solutions in Hyderabad. I specialize in delivering strategic value through meticulous financial analysis, SOP creation, and ServiceNow implementations.</p>
+            <div class="hero-btns">
+                <a href="#expertise" class="btn-primary">Explore My Work</a>
+                <a href="https://www.linkedin.com/in/reemandsouza/" target="_blank" class="btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <div class="hero-image-container observe">
+            <img src="profile.jpg" alt="Reema" class="hero-image" onerror="this.src='https://via.placeholder.com/300'">
+            <div class="floating-badge badge1"><i class="fas fa-chart-pie"></i> Finance</div>
+            <div class="floating-badge badge2"><i class="fas fa-code"></i> ServiceNow</div>
+        </div>
+    </section>
+
+    <section id="expertise" class="container">
+        <h2 class="section-title observe">Professional Trajectory</h2>
+        <div class="grid-2">
+            <div class="glass-card observe">
+                <div class="card-icon"><i class="fas fa-building"></i></div>
+                <h3>Deloitte</h3>
+                <h4 class="text-muted">Current Impact</h4>
+                <p>Driving operational excellence through detailed financial reporting, process automation, and the creation of robust standard operating procedures (SOPs).</p>
+            </div>
+            
+            <div class="glass-card observe" style="transition-delay: 0.2s;">
+                <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Career Targets</h3>
+                <h4 class="text-muted">Consulting & Management</h4>
+                <p>Targeting impactful roles such as a ServiceNow Consultant or Assistant Manager in Finance/Accounting, blending technical acumen with strategic financial planning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container">
+        <h2 class="section-title observe">Moments & Highlights</h2>
+        <p class="text-center observe" style="margin-bottom: 40px; color: var(--text-muted);">From analyzing the Indian stock market and climbing Call of Duty rankings, to perfecting Indian seafood recipes and preparing for coastal trips to Mangalore.</p>
+        
+        <div class="image-gallery observe">
+            <div class="gallery-item">
+                <img src="workspace.jpg" alt="Workspace" onerror="this.src='https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=500&q=80'">
+                <div class="gallery-overlay"><span>Professional Setup</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="finance.jpg" alt="Finance" onerror="this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=80'">
+                <div class="gallery-overlay"><span>Market Analysis</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="travel.jpg" alt="Travel" onerror="this.src='https://images.unsplash.com/photo-1506461883276-594a12b11ac3?w=500&q=80'">
+                <div class="gallery-overlay"><span>Mangalore Bound</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="culinary.jpg" alt="Culinary" onerror="this.src='https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&q=80'">
+                <div class="gallery-overlay"><span>Culinary Projects</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container observe">
+        <div class="glass-card contact-wrapper">
+            <h2 class="section-title" style="margin-bottom: 10px;">Let's Connect</h2>
+            <p style="text-align: center; margin-bottom: 30px; color: var(--text-muted);">Reach out for consulting inquiries or professional opportunities.</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label>Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label>Your Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="4" required placeholder=" "></textarea>
+                    <label>Your Message</label>
+                </div>
+                <button type="submit" class="btn-primary w-100">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div id="formStatus" class="form-status"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
