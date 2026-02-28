@@ -189,3 +189,20 @@ body { background-color: var(--bg-dark); color: var(--text-main); overflow-x: hi
         transform: translateY(0);
     }
 }
+
+/* Standard Desktop Styles here... */
+
+/* Mobile Styles (Screens 768px and smaller) */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide non-essential items */
+  }
+  
+  .main-content {
+    width: 100%; /* Take up full width on mobile */
+  }
+  
+  body {
+    font-size: 18px; /* Slightly larger text is easier to read on phones */
+  }
+}
